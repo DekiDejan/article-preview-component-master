@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  height: 100vh;
+  display: flex;
+}
+
+.card {
+  max-width: 320px;
+  margin: auto;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.card img {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .text {
+  margin: 2rem 2rem 1rem;
+}
+.card .text h1 {
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+.card .text p {
+  margin: 1rem 0;
+  line-height: 1.3rem;
+  color: hsl(214, 17%, 51%);
+}
+.card .text .person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  letter-spacing: 0.5px;
+  height: 40px;
+}
+.card .text .person .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card .text .person .info {
+  margin-right: 2rem;
+}
+.card .text .person .info .name {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  cursor: pointer;
+}
+.card .text .person .info .date {
+  color: hsl(212, 23%, 69%);
+}
+.card .text .person .share {
+  background-color: hsl(210, 46%, 95%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-top: 7px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.card .text .person .share img {
+  width: 15px;
+  height: 15px;
+}
+.card .text .active {
+  height: 75px;
+  width: 320px;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  border-radius: 0 0 0.5rem 0.5rem;
+  position: absolute;
+  transform: translate(-2rem, -58px);
+  padding: 0 2rem;
+  display: none;
+  align-items: center;
+}
+.card .text .active span {
+  letter-spacing: 5px;
+  margin-right: 10px;
+}
+.card .text .active img {
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+  cursor: pointer;
+}
+.card .text .active div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-top: 4px;
+  padding-left: 4px;
+  background-color: hsl(214, 17%, 51%);
+  margin-left: 35px;
+  cursor: pointer;
+}
+.card .text .active div img {
+  width: 15px;
+  height: 15px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 700px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: row;
+  }
+  .card img {
+    width: 40%;
+    border-radius: 0.5rem 0 0 0.5rem;
+    height: 250px;
+  }
+  .card .info {
+    margin-left: -5rem;
+  }
+  .card .text .active {
+    display: none;
+    border-radius: 0.5rem;
+    height: 50px;
+    width: 250px;
+    transform: translate(200px, -100px);
+  }
+  .card .text .active div {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
